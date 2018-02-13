@@ -28,5 +28,7 @@
 </head>
 <body>
 
+<?php get_template_part('nav'); ?>
+
 <div class="wrapper">
 	<div class="content">

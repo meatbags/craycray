@@ -1,13 +1,17 @@
 // colour
 
-$colourPrimary: black;
-$colourBackground: orange;
-$colourBackgroundGradient: linear-gradient(to top, orange, white);
+$black: #000;
+$white: #fff;
+$colourPrimary: $black;
+$colourBackground: #fe571f;
+$orangeLight: #ffd6b3;
+$colourBackgroundGradient: linear-gradient(to top, $colourBackground, $orangeLight);
 
 // sizing
 
 $space: 10px;
-$width: 960px;
+$width: 1000px;
+$heightNav: 100px;
 
 // break-points
 
@@ -22,3 +26,7 @@ $transition: 0.5s;
 // borders
 
 $border: 1px solid black;
+
+// index
+
+$indexNav: 10;

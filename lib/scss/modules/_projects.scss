@@ -1,0 +1,12 @@
+.projects {
+  width: 100%;
+
+  .projects__inner {
+    width: 100%;
+    display: flex;
+
+    .column {
+      width: 33.33%;
+    }
+  }
+}

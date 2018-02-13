@@ -1,0 +1,12 @@
+.nav {
+  position: fixed;
+  z-index: $indexNav;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $heightNav;
+
+  .nav__inner {
+    width: 100%;
+  }
+}
