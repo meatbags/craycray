@@ -1,12 +1,34 @@
 .nav {
+  @extend .noselect;
+  
   position: fixed;
   z-index: $indexNav;
   top: 0;
   left: 0;
   width: 100%;
   height: $heightNav;
+  display: flex;
+  align-items: flex-end;
 
   .nav__inner {
+    @include pad-xy(2, 1);
     width: 100%;
+    display: flex;
+
+    .nav__inner__third {
+      width: 33.33%;
+
+      &:nth-child(1) {
+        text-align: left;
+      }
+
+      &:nth-child(2) {
+        text-align: center;
+      }
+
+      &:nth-child(3) {
+        text-align: right;
+      }
+    }
   }
 }

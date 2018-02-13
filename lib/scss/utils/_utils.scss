@@ -26,6 +26,13 @@
   padding-bottom: $space * $scale;
 }
 
+@mixin pad-xy($x, $y) {
+  padding-top: $space * $y;
+  padding-bottom: $space * $y;
+  padding-left: $space * $x;
+  padding-right: $space * $x;
+}
+
 .noselect {
   user-select: none;
 }

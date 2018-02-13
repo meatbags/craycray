@@ -3,6 +3,7 @@
 
 <div class='footer'>
 	<div class='footer__inner'>
+		(c) <?php echo date("Y"); ?>
 	</div>
 </div>
 

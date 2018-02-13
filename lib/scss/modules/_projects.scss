@@ -4,9 +4,10 @@
   .projects__inner {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 
     .column {
-      width: 33.33%;
+      width: 33.33%
     }
   }
 }
