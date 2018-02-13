@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-160 162 190 190" style="enable-background:new -160 162 190 190;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{clip-path:url(#SVGID_2_);fill:none;stroke:#1D5B63;stroke-width:18;stroke-miterlimit:10;}
+	.st3{clip-path:url(#SVGID_4_);fill:none;stroke:#0C7E8E;stroke-width:18;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#0C7E8E;stroke-width:19.5;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#0C7E8E;stroke-width:18.75;stroke-miterlimit:10;}
+	.st6{display:inline;fill:none;stroke:#44ACCA;stroke-width:18;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1_1_" class="st0">
+	<g id="XMLID_3_" class="st1">
+		<g>
+			<defs>
+				<polygon id="SVGID_1_" points="-62.1,257.3 -13.8,220.2 16.9,189.2 27.5,162.9 -165,154.9 -156.9,352 27.5,352 14.4,322.6 
+					-9.2,299.7 				"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<circle id="XMLID_5_" class="st2" cx="-62.1" cy="257.3" r="85.2"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_3">
+	<g id="XMLID_133_">
+		<g>
+			<defs>
+				<polygon id="SVGID_3_" points="-62.5,257.3 -14.2,220.2 26.1,189.4 30,159.7 -157.2,159.7 -157.2,352 27.1,352 27.1,321.1 
+					-9.5,304.9 				"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+			</clipPath>
+			<circle id="XMLID_135_" class="st3" cx="-62.5" cy="257.3" r="85.2"/>
+		</g>
+	</g>
+	<line id="XMLID_132_" class="st4" x1="2.4" y1="315.2" x2="2.4" y2="247.8"/>
+	<line id="XMLID_131_" class="st5" x1="12" y1="257.2" x2="-62.5" y2="257.2"/>
+</g>
+<g id="Layer_2" class="st0">
+	<ellipse id="XMLID_6_" class="st6" cx="-65" cy="257.2" rx="80.9" ry="85.2"/>
+	<line id="XMLID_4_" class="st6" x1="15.8" y1="164.2" x2="15.8" y2="351.2"/>
+</g>
+</svg>

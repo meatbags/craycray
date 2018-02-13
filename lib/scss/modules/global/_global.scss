@@ -1,0 +1,37 @@
+div, * {
+  box-sizing: border-box;
+  //outline: 1px solid rgba(0,0,0,0.5);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: $fontStack;
+  font-size: $fontSize;
+  color: $black;
+  letter-spacing: $letterSpacing;
+  line-height: $lineHeight;
+  overflow-x: hidden;
+
+  @media screen and (max-width: $width) {
+    font-size: $fontSizeTablet;
+    letter-spacing: $letterSpacingTablet;
+    line-height: $lineHeightTablet;
+  }
+
+  @media screen and (max-width: $mobile) {
+    font-size: $fontSizeMobile;
+    letter-spacing: $letterSpacingMobile;
+    line-height: $lineHeightMobile;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $colourLink;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}

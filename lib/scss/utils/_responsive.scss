@@ -1,0 +1,19 @@
+.mobile-hide {
+  @media screen and (max-width: $width) {
+    display: none;
+  }
+}
+
+.mobile-main {
+  @media screen and (max-width: $width) {
+    width: 100% !important;
+    padding-left: $space * 4;
+    padding-right: $space * 4;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 100% !important;
+    padding-left: $space * 2;
+    padding-right: $space * 2;
+  }
+}

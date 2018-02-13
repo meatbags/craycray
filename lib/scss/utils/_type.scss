@@ -1,0 +1,42 @@
+// defaults
+
+$fontStack: 'Work Sans', sans-serif;
+
+// sizing
+
+$fontSmall: 16px;
+$fontSize: 19px;
+$fontMedium: 28px;
+$fontLarge: 55px;
+$letterSpacing: 0;
+$lineHeight: 1.33;
+
+// responsive tablet
+
+$fontSmallTablet: 15px;
+$fontSizeTablet: 17px;
+$fontMediumTablet: 24px;
+$fontLargeTablet: 42px;
+$letterSpacingTablet: 0;
+$lineHeightTablet: 1.5;
+
+// responsive mobile
+
+$fontSmallMobile: 14px;
+$fontSizeMobile: 16px;
+$fontMediumMobile: 24px;
+$fontLargeMobile: 30px;
+$letterSpacingMobile: 0;
+$lineHeightMobile: 1.2;
+
+// helpers
+
+.text-small {
+  font-size: $fontSmall;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalise {
+  text-transform: capitalize;
+}

@@ -1,0 +1,28 @@
+.home-button, .home-button__under {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: $space * 3;
+  width: 120px;
+  cursor: pointer;
+  transition: $transition;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.home-button {
+  z-index: $indexHomeButton;
+}
+
+.home-button__under {
+  z-index: -1;
+  transform: translate(1px, 1px);
+  pointer-events: none;
+}

@@ -1,0 +1,16 @@
+.file-list {
+  @include pad-y(3);
+  width: 100%;
+
+  .file {
+    @extend .button;
+    width: 100%;
+
+    .file__inner {
+      @extend .button__inner;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
