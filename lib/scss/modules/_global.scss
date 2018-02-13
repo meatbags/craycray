@@ -1,0 +1,21 @@
+div, * {
+  box-sizing: border-box;
+  outline: 1px solid rgba(0,0,0,0.1);
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  font-family: $fontStack;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+  color: $colourPrimary;
+  background: $colourBackground;
+  background: $colourBackgroundGradient;
+}

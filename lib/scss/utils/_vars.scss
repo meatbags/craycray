@@ -1,22 +1,13 @@
 // colour
 
-$colourPrimary: #337e94;
-$colourMedium: lighten($colourPrimary, 10%);
-$colourSecondary: lighten($colourPrimary, 20%);
-$colourLink: #3e42f3;
-$black: #000;
-$grey: #aaa;
-$white: #fff;
-$gradient: linear-gradient(to right, $colourPrimary, $colourSecondary);
-$gradientReversed: linear-gradient(to left, $colourPrimary, $colourSecondary);
-$gradientWhite: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+$colourPrimary: black;
+$colourBackground: orange;
+$colourBackgroundGradient: linear-gradient(to top, orange, white);
 
 // sizing
 
 $space: 10px;
-$sizeNav: 120px;
-$sizeFooter: 20vh;
-$offset: $space * 2;
+$width: 960px;
 
 // break-points
 
@@ -26,18 +17,8 @@ $mobile: 500px;
 
 // animation
 
-$transition: 0.6s;
-$transitionMedium: 0.3s;
-$transitionFast: 0.2s;
-
-// indices
-
-$indexSection: 10;
-$indexHomeButton: 100;
-$indexLoading: 200;
+$transition: 0.5s;
 
 // borders
 
 $border: 1px solid black;
-$borderThick: 5px solid $colourSecondary;
-$borderExtra: 15px solid $colourSecondary;

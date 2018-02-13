@@ -28,5 +28,5 @@
 </head>
 <body>
 
-<div class="content">
-	<div class="wrapper">
+<div class="wrapper">
+	<div class="content">

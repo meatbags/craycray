@@ -1,0 +1,10 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+
+  .content {
+    width: $width;
+  }
+}
