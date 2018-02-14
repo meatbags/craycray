@@ -3,7 +3,7 @@
 
 <div class='footer'>
 	<div class='footer__inner'>
-		(c) <?php echo date("Y"); ?>
+		Copyright here links etc. (c) <?php echo date("Y"); ?>
 	</div>
 </div>
 
