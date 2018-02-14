@@ -1,6 +1,6 @@
 .nav {
   @extend .noselect;
-  
+
   position: fixed;
   z-index: $indexNav;
   top: 0;
@@ -9,25 +9,42 @@
   height: $heightNav;
   display: flex;
   align-items: flex-end;
+  line-height: 1;
 
   .nav__inner {
-    @include pad-xy(2, 1);
+    @include pad-xy(3, 2);
     width: 100%;
     display: flex;
+    align-items: flex-end;
 
     .nav__inner__third {
-      width: 33.33%;
+      width: 33.333%;
+      display: flex;
+      height: 100%;
+      align-items: flex-end;
 
       &:nth-child(1) {
-        text-align: left;
+        justify-content: flex-start;
       }
 
       &:nth-child(2) {
-        text-align: center;
+        justify-content: center;
+        font-size: $fontLarge;
       }
 
       &:nth-child(3) {
-        text-align: right;
+        justify-content: flex-end;
+      }
+
+      .nav-item {
+        @include pad-x(2);
+        cursor: pointer;
+
+        &:hover {
+          .nav-item__inner {
+            font-weight: bold;
+          }
+        }
       }
     }
   }

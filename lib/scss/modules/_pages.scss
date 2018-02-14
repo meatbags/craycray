@@ -1,5 +1,6 @@
 .pages {
   width: 100%;
+  min-height: 100vh;
 
   .page {
     width: 100%;
@@ -11,6 +12,7 @@
 
       .page__inner__title {
         width: 40%;
+        font-size: $fontLarge;
       }
 
       .page__inner__content {
@@ -19,6 +21,7 @@
         p {
           padding: 0;
           margin: 0;
+          padding-bottom: $space * 4;
         }
       }
     }

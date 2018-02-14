@@ -1,8 +1,7 @@
 .item {
   @extend .noselect;
-  
   width: 100%;
-  padding: $space * 2;
+  padding: $space * 1.5;
   cursor: pointer;
 
   .item__inner {
@@ -24,40 +23,31 @@
       }
     }
 
+    .sequence {
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: 0;
+
+      &:nth-child(1) {
+        position: relative;
+      }
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
     &.image_static:hover {
-      opacity: 0.5;
+
     }
 
     &.image_hover:hover {
       .hover {
-        &:nth-child(1) {
-          opacity: 0;
-        }
-
         &:nth-child(2) {
           opacity: 1;
         }
       }
-    }
-
-    &.image_hue:hover {
-      animation-name: animate-hue;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-    }
-
-    &.image_rotate:hover {
-      img {
-        animation-name: animate-rotate;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-      }
-    }
-
-    &.image_invert:hover {
-      filter: invert(1);
     }
   }
 }

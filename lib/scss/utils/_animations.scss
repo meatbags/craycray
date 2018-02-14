@@ -4,6 +4,12 @@
 }
 
 @keyframes animate-rotate {
-  0% { transform: rotate3d(0, 1, 0, 0deg); }
-  100% { transform: rotate3d(0, 1, 0, 360deg); }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
+
+// speeds
+
+$transition: 0.5s;
+$transitionFast: 0.25s;
+$transitionSlow: 1s;
