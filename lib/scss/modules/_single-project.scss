@@ -11,7 +11,7 @@
     min-height: 100vh;
 
     .project__inner__left {
-      width: 35%;
+      width: 45%;
       padding: $space * 2;
 
       .back-to-projects {
@@ -24,11 +24,24 @@
         font-size: $fontHuge;
         text-transform: uppercase;
         padding-bottom: $space;
+        line-height: 1;
+      }
+
+      .description {
+        padding-bottom: $space;
+      }
+
+      .links {
+        display: flex;
+
+        .link {
+          padding-right: $space;
+        }
       }
     }
 
     .project__inner__right {
-      width: 65%;
+      width: 55%;
       padding: $space * 2;
 
       .video {
@@ -48,18 +61,6 @@
         img {
           width: 100%;
           height: auto;
-        }
-      }
-
-      .description {
-        padding-bottom: $space;
-      }
-
-      .links {
-        display: flex;
-
-        .link {
-          padding-right: $space;
         }
       }
     }

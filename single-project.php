@@ -12,10 +12,23 @@
 <div class='project' id='<?php echo $id; ?>'>
   <div class='project__inner'>
     <div class='project__inner__left'>
-      <div class='back-to-projects'>&larr; BACK.</div>
       <div class='title'>
         <?php echo $title; ?>.
       </div>
+      <?php if ($description): ?>
+      <div class='description'>
+        <?php echo $description; ?>
+      </div>
+      <?php endif;
+        if ($links): ?>
+      <div class='links'>
+        <?php foreach ($links as $link): ?>
+          <div class='link'>
+            <a href='<?php echo $link['url']; ?>'><?php echo $link['label']; ?></a>
+          </div>
+        <?php endforeach; ?>
+      </div>
+      <?php endif; ?>
     </div>
     <div class='project__inner__right'>
       <?php if ($video): ?>
@@ -31,25 +44,7 @@
         </div>
       <?php
           endforeach;
-        endif;
-        if ($description): ?>
-        <div class='description'>
-          <?php echo $description; ?>
-        </div>
-      <?php
-        endif;
-        if ($links): ?>
-        <div class='links'>
-          <?php foreach ($links as $link): ?>
-            <div class='link'>
-              <a href='<?php echo $link['url']; ?>'><?php echo $link['label']; ?></a>
-            </div>
-            <div class='link'>
-              <a href='<?php echo $link['url']; ?>'><?php echo $link['label']; ?></a>
-            </div>
-          <?php endforeach; ?>
-        </div>
-      <?php endif; ?>
+        endif; ?>
     </div>
   </div>
 </div>
