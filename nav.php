@@ -1,12 +1,13 @@
 <?php
   $dir = get_template_directory_uri();
+  $home = get_site_url();
 ?>
 
 <div class='nav'>
   <div class='nav__inner'>
     <div class='nav__inner__third'>
       <div class='nav-item'>
-        <div class='nav-item__inner'>Home</div>
+        <div class='nav-item__inner'><a href='<?php echo $home; ?>'>Home</a></div>
       </div>
     </div>
     <div class='nav__inner__third'>
@@ -19,13 +20,10 @@
     </div>
     <div class='nav__inner__third'>
       <div class='nav-item'>
-        <div class='nav-item__inner'>Work</div>
+        <div class='nav-item__inner'><a href='<?php echo $home; ?>'>Work</a></div>
       </div>
       <div class='nav-item'>
-        <div class='nav-item__inner'>Info</div>
-      </div>
-      <div class='nav-item'>
-        <div class='nav-item__inner'>Instagram</div>
+        <div class='nav-item__inner'><a target='_blank' href='https://www.instagram.com/bestieboy_director/'>Instagram</a></div>
       </div>
     </div>
   </div>

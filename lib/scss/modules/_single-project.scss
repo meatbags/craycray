@@ -1,21 +1,11 @@
-.project-pane {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
+.project {
+  width: 100%;
   display: flex;
-  top: 0;
-  left: 100vw;
-  transition: left $transitionSlow;
   padding-top: $heightNav;
   display: flex;
   justify-content: center;
-  overflow-y: scroll;
 
-  &.active {
-    left: 0;
-  }
-
-  .project-pane__inner {
+  .project__inner {
     width: $width;
     padding-top: $space * 4;
     display: flex;
@@ -23,7 +13,7 @@
     padding-bottom: $space * 2;
     min-height: 100vh;
 
-    .project-pane__inner__left {
+    .project__inner__left {
       width: 40%;
       padding: $space * 2;
 
@@ -39,7 +29,7 @@
       }
     }
 
-    .project-pane__inner__right {
+    .project__inner__right {
       width: 60%;
       padding: $space * 2;
 
@@ -78,7 +68,7 @@
       flex-direction: column;
       justify-content: flex-start;
 
-      .project-pane__inner__left, .project-pane__inner__right {
+      .project__inner__left, .project__inner__right {
         width: 100%;
 
         .title {
