@@ -1,20 +1,17 @@
 .project {
   width: 100%;
   display: flex;
-  padding-top: $heightNav;
-  display: flex;
   justify-content: center;
 
   .project__inner {
     width: $width;
-    padding-top: $space * 4;
     display: flex;
     justify-content: space-between;
     padding-bottom: $space * 2;
     min-height: 100vh;
 
     .project__inner__left {
-      width: 40%;
+      width: 35%;
       padding: $space * 2;
 
       .back-to-projects {
@@ -26,15 +23,17 @@
       .title {
         font-size: $fontHuge;
         text-transform: uppercase;
+        padding-bottom: $space;
       }
     }
 
     .project__inner__right {
-      width: 60%;
+      width: 65%;
       padding: $space * 2;
 
       .video {
         width: 100%;
+        padding-bottom: $space;
 
         iframe {
           width: 100%;
@@ -44,6 +43,7 @@
 
       .image {
         width: 100%;
+        padding-bottom: $space;
 
         img {
           width: 100%;
@@ -52,11 +52,15 @@
       }
 
       .description {
-
+        padding-bottom: $space;
       }
 
       .links {
+        display: flex;
 
+        .link {
+          padding-right: $space;
+        }
       }
     }
 

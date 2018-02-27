@@ -44,6 +44,9 @@
             <div class='link'>
               <a href='<?php echo $link['url']; ?>'><?php echo $link['label']; ?></a>
             </div>
+            <div class='link'>
+              <a href='<?php echo $link['url']; ?>'><?php echo $link['label']; ?></a>
+            </div>
           <?php endforeach; ?>
         </div>
       <?php endif; ?>

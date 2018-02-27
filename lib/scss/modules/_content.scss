@@ -10,8 +10,4 @@
     width: $width;
     padding-top: $space * 4;
   }
-
-  &.hidden {
-    transform: translateX(-100vw);
-  }
 }
