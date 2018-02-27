@@ -4,16 +4,19 @@ $black: #000;
 $white: #fff;
 $colourPrimary: $black;
 $colourBackground: #fe571f;
+$colourBackgroundAlt: #fb5012;
 $orangeLight: #ffe6c3;
+$redLight: #ffe0c0;
 $orangeDark: darken($colourBackground, 10%);
 $colourBackgroundGradient: linear-gradient(to top, $colourBackground, $orangeLight);
+$colourBackgroundGradientAlt: linear-gradient(to top, $colourBackgroundAlt, $redLight);
 $colourHover: lighten($orangeLight, 10%);
 
 // sizing
 
 $space: 10px;
 $width: 1280px;
-$heightNav: 200px;
+$heightNav: 160px;
 $heightFooter: 80px;
 
 // break-points

@@ -4,9 +4,14 @@
   justify-content: center;
   min-height: 100vh;
   padding-top: $heightNav;
+  transition: $transitionSlow;
 
   .content {
     width: $width;
     padding-top: $space * 4;
+  }
+
+  &.hidden {
+    transform: translateX(-100vw);
   }
 }

@@ -29,6 +29,7 @@
 <body>
 
 <?php get_template_part('nav'); ?>
+<?php get_template_part('project-pane'); ?>
 
 <div class="wrapper">
 	<div class="content">

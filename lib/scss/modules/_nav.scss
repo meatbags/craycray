@@ -40,9 +40,10 @@
       .nav-logo {
         width: 100%;
         height: 100%;
-        outline: $border;
+        //outline: $border;
         position: relative;
         flex: 1;
+        cursor: pointer;
 
         img {
           position: fixed;
@@ -60,6 +61,10 @@
 
           &.active {
             opacity: 1;
+          }
+
+          @media screen and (max-width: $tablet) {
+            display: none;
           }
         }
       }
