@@ -9,7 +9,18 @@
   $id = 'project-' . get_the_ID();
 ?>
 
-<div class='item <?php foreach($cats as $cat){ echo 'filter-' . $cat->name . ' '; } ?>'>
+<div class='item <?php
+    $featured = false;
+    foreach($cats as $cat){
+      if ($cat->name == 'Featured') {
+        $featured = true;
+      }
+      echo 'filter-' . $cat->name . ' ';
+    }
+    if (!$featured) {
+      echo ' display-none';
+    }
+  ?>'>
   <a href='<?php echo $permalink; ?>'>
     <div class='item__inner <?php echo $type; ?>' data-id='#<?php echo $id; ?>'>
       <?php if ($type == 'image_static'): ?>

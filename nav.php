@@ -38,7 +38,7 @@
   <div class='drop-down__inner'>
     <?php foreach($cats as $cat):
       if ($cat->name != 'Uncategorised'): ?>
-        <div class='drop-down-item' data-filter='filter-<?php echo $cat->name; ?>'>
+        <div class='drop-down-item' data-filter='.filter-<?php echo $cat->name; ?>'>
           <?php echo $cat->name; ?>
         </div>
     <?php endif;

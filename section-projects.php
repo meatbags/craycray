@@ -1,5 +1,5 @@
 <?php
-  $query = new WP_Query(array('post_type' => 'project', 'orderby' => 'menu_order'));
+  $query = new WP_Query(array('posts_per_page' => -1, 'post_type' => 'project', 'orderby' => 'menu_order'));
   function getColumn($projects, $n) {
     $i = 0;
     foreach ($projects as $project) {

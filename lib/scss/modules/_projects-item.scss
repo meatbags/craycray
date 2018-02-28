@@ -3,6 +3,8 @@
   @extend .noselect;
   width: 100%;
   cursor: pointer;
+  opacity: 1;
+  transition: opacity $transition;
 
   .item__inner {
     width: 100%;
@@ -49,5 +51,9 @@
         }
       }
     }
+  }
+
+  &.fade-out {
+    opacity: 0;
   }
 }
