@@ -1,23 +1,26 @@
 .pages {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
 
   .page {
     width: 100%;
     padding: $space * 2;
+    display: flex;
+    justify-content: flex-end;
 
     .page__inner {
-      width: 100%;
+      width: 60%;
       display: flex;
+      text-align: right;
+      flex-direction: column;
+      align-items: flex-end;
 
       .page__inner__title {
-        width: 40%;
-        font-size: $fontLarge;
+        font-weight: bold;
+        padding-bottom: $space * 4;
       }
 
       .page__inner__content {
-        width: 60%;
-
         p {
           padding: 0;
           margin: 0;

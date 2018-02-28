@@ -26,7 +26,7 @@
       padding-left: $space * 0.5;
       padding-right: $space * 0.5;
     }
-
+    
     .nav__inner__third {
       width: 33.333%;
       display: flex;
@@ -84,6 +84,7 @@
 
       .nav-item {
         cursor: pointer;
+        text-decoration: underline;
 
         &:hover {
           .nav-item__inner {

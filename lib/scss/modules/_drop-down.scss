@@ -1,0 +1,39 @@
+.drop-down {
+  @extend .noselect;
+  position: fixed;
+  z-index: $indexNav;
+  width: 100%;
+  left: 0;
+  top: $heightNav;
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+  opacity: 0;
+  transition: opacity $transition;
+
+  &.active {
+    opacity: 1;
+  }
+
+  .drop-down__inner {
+    width: $width;
+    padding-top: $space * 1.5;
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (max-width: $width) {
+      width: 100%;
+      padding-left: $space * 0.5;
+      padding-right: $space * 0.5;
+    }
+
+    .drop-down-item {
+      padding-left: $space;
+      cursor: pointer;
+
+      &:hover, &.active {
+        font-weight: bold;
+      }
+    }
+  }
+}

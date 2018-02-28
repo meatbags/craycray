@@ -5,10 +5,11 @@
   $image2 = get_field('hover_image');
   $sequence = get_field('image_sequence');
   $permalink = get_the_permalink();
+  $cats = get_the_category();
   $id = 'project-' . get_the_ID();
 ?>
 
-<div class='item'>
+<div class='item <?php foreach($cats as $cat){ echo 'filter-' . $cat->name . ' '; } ?>'>
   <a href='<?php echo $permalink; ?>'>
     <div class='item__inner <?php echo $type; ?>' data-id='#<?php echo $id; ?>'>
       <?php if ($type == 'image_static'): ?>
