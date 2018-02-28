@@ -11,38 +11,9 @@
     min-height: 100vh;
 
     .project__inner__left {
-      width: 45%;
-      padding: $space * 2;
-
-      .back-to-projects {
-        cursor: pointer;
-        text-decoration: underline;
-        font-size: $fontMedium;
-      }
-
-      .title {
-        font-size: $fontHuge;
-        text-transform: uppercase;
-        padding-bottom: $space;
-        line-height: 1;
-      }
-
-      .description {
-        padding-bottom: $space;
-      }
-
-      .links {
-        display: flex;
-
-        .link {
-          padding-right: $space;
-        }
-      }
-    }
-
-    .project__inner__right {
-      width: 55%;
-      padding: $space * 2;
+      width: 66.66%;
+      padding-right: $space * 2.5;
+      padding-top: $space * 0.5;
 
       .video {
         width: 100%;
@@ -65,21 +36,41 @@
       }
     }
 
+    .project__inner__right {
+      width: 33.33%;
+      padding-left: $space * 0.5;
+      text-align: left;
+
+      .back-to-projects {
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: $fontMedium;
+      }
+
+      .title {
+        font-weight: bold;
+      }
+
+      .description {
+        padding-bottom: $space;
+        text-align: justify;
+      }
+
+      .links {
+        display: flex;
+
+        .link {
+          padding-right: $space;
+        }
+      }
+    }
+
     @media screen and (max-width: $width) {
       width: 100%;
     }
 
     @media screen and (max-width: $tablet) {
-      flex-direction: column;
-      justify-content: flex-start;
-
       .project__inner__left, .project__inner__right {
-        width: 100%;
-
-        .title {
-          font-size: $fontLarge;
-        }
-
         .video {
           iframe {
             height: 40vh;

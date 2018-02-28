@@ -1,7 +1,7 @@
 .item {
+  @include pad-y(1.5);
   @extend .noselect;
   width: 100%;
-  padding: $space * 1.5;
   cursor: pointer;
 
   .item__inner {

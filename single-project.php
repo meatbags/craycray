@@ -1,6 +1,5 @@
 <?php
   get_header();
-
   $title = get_the_title();
   $video = get_field('video');
   $gallery = get_field('gallery');
@@ -12,6 +11,22 @@
 <div class='project' id='<?php echo $id; ?>'>
   <div class='project__inner'>
     <div class='project__inner__left'>
+      <?php if ($video): ?>
+        <div class='video'>
+          <?php echo $video; ?>
+        </div>
+      <?php endif;
+        if ($gallery):
+          foreach ($gallery as $img):
+      ?>
+        <div class='image'>
+          <img src='<?php echo $img['sizes']['large']; ?>' />
+        </div>
+      <?php
+          endforeach;
+        endif; ?>
+    </div>
+    <div class='project__inner__right'>
       <div class='title'>
         <?php echo $title; ?>.
       </div>
@@ -29,22 +44,6 @@
         <?php endforeach; ?>
       </div>
       <?php endif; ?>
-    </div>
-    <div class='project__inner__right'>
-      <?php if ($video): ?>
-        <div class='video'>
-          <?php echo $video; ?>
-        </div>
-      <?php endif;
-        if ($gallery):
-          foreach ($gallery as $img):
-      ?>
-        <div class='image'>
-          <img src='<?php echo $img['sizes']['large']; ?>' />
-        </div>
-      <?php
-          endforeach;
-        endif; ?>
     </div>
   </div>
 </div>

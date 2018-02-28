@@ -1,5 +1,17 @@
 .footer {
-  height: $heightFooter;
-  padding: $space * 2;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  .footer__inner {
+    width: $width;
+    height: $heightFooter;
+    padding: $space * 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @media screen and (max-width: $width) {
+      width: 100%;
+    }
+  }
 }

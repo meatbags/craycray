@@ -9,5 +9,11 @@
   .content {
     width: $width;
     padding-top: $space * 4;
+
+    @media screen and (max-width: $width) {
+      width: 100%;
+      padding-left: $space * 0.5;
+      padding-right: $space * 0.5;
+    }
   }
 }
