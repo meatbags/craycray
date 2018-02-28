@@ -3,9 +3,9 @@
   justify-content: center;
 
   .footer__inner {
+    @include pad-xy(0, 2);
     width: $width;
     height: $heightFooter;
-    padding: $space * 2;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;

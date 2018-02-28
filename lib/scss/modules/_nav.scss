@@ -1,7 +1,7 @@
 .nav {
   @extend .noselect;
 
-  position: fixed;
+  position: absolute;
   z-index: $indexNav;
   top: 0;
   left: 0;
@@ -26,7 +26,7 @@
       padding-left: $space * 0.5;
       padding-right: $space * 0.5;
     }
-    
+
     .nav__inner__third {
       width: 33.333%;
       display: flex;
@@ -62,7 +62,7 @@
         cursor: pointer;
 
         img {
-          position: fixed;
+          position: absolute;
         }
 
         .eye-pupil, .eye-glow {}
@@ -86,7 +86,7 @@
         cursor: pointer;
         text-decoration: underline;
 
-        &:hover {
+        &:hover, &.active {
           .nav-item__inner {
             font-weight: bold;
           }

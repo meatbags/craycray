@@ -15,7 +15,7 @@
       if ($cat->name == 'Featured') {
         $featured = true;
       }
-      echo 'filter-' . $cat->name . ' ';
+      echo 'filter-' . $cat->slug . ' ';
     }
     if (!$featured) {
       echo ' display-none';

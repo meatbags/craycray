@@ -2,7 +2,7 @@
 </div> <!-- /content -->
 <div class='footer'>
 	<div class='footer__inner'>
-		(c) Neirin Best <?php echo date("Y"); ?>
+		<a target='_blank' href='https://www.instagram.com/bestieboy_director/'>Instagram</a> (c) Neirin Best <?php echo date("Y"); ?>
 	</div>
 </div>
 </body>

@@ -18,10 +18,12 @@
       .video {
         width: 100%;
         padding-bottom: $space;
-
+        
         iframe {
+          margin: 0;
           width: 100%;
           height: 50vh;
+          padding: 0;
         }
       }
 
