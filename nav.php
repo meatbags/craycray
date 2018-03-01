@@ -10,11 +10,13 @@
     <div class='nav__inner__third'>
       <?php if (!is_home()): ?>
         <div class='nav-item'>
-          <div class='nav-item__inner'><a href='<?php echo $home; ?>'>&larr; Home</a></div>
+          <div class='nav-item__inner home-button'><a href='<?php echo $home; ?>'>&larr; Home</a></div>
         </div>
       <?php else: ?>
         <div class='nav-item'>
-          <div class='nav-item__inner'>Something here</div>
+          <div class='nav-item__inner'>
+            <a target='_blank' href='https://www.instagram.com/bestieboy_director/'>Instagram</a>
+          </div>
         </div>
       <?php endif; ?>
     </div>

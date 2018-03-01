@@ -17,6 +17,7 @@
 		/* <![CDATA[ */
 			var themePath = '<?php echo get_template_directory_uri(); ?>';
 			var ajaxUrl = '<?php //echo admin_url('admin-ajax.php'); ?>';
+			var homeURL = '<?php echo get_site_url(); ?>';
 			var pageTitle = '<?php echo get_the_title(); ?>';
 			var isHome = '<?php echo is_home(); ?>';
 		/* ]]> */
