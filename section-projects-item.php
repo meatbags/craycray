@@ -7,6 +7,7 @@
   $permalink = get_the_permalink();
   $cats = get_the_category();
   $id = 'project-' . get_the_ID();
+  $imgSize = 'medium_large';
 ?>
 
 <div class='item <?php
@@ -24,14 +25,14 @@
   <a href='<?php echo $permalink; ?>'>
     <div class='item__inner <?php echo $type; ?>' data-id='#<?php echo $id; ?>'>
       <?php if ($type == 'image_static'): ?>
-        <img src='<?php echo $image1['sizes']['large']; ?>' />
+        <img src='<?php echo $image1['sizes'][$imgSize]; ?>' />
       <?php elseif ($type == 'image_hover'): ?>
-        <img class='hover' src='<?php echo $image1['sizes']['large']; ?>' />
-        <img class='hover' src='<?php echo $image2['sizes']['large']; ?>' />
+        <img class='hover' src='<?php echo $image1['sizes'][$imgSize]; ?>' />
+        <img class='hover' src='<?php echo $image2['sizes'][$imgSize]; ?>' />
       <?php elseif ($type == 'image_sequence'):
         $i = 0;
         foreach ($sequence as $img): ?>
-        <img class='sequence <?php if ($i++ == 0){ echo 'active'; } ?>' src='<?php echo $img['sizes']['large']; ?>' />
+        <img class='sequence <?php if ($i++ == 0){ echo 'active'; } ?>' src='<?php echo $img['sizes'][$imgSize]; ?>' />
       <?php endforeach; endif; ?>
     </div>
   </a>
