@@ -22,10 +22,10 @@
     </div>
     <div class='nav__inner__third'>
       <div class='nav-logo'>
-        <img class='eye-ray display-none' src='<?php echo $dir . '/lib/img/eye_ray.png'?>' />
-        <img class='eye-glow display-none' src='<?php echo $dir . '/lib/img/eye_glow.png'?>' />
-        <img class='eye-base display-none' src='<?php echo $dir . '/lib/img/eye_base.png'?>' />
-        <img class='eye-pupil display-none' src='<?php echo $dir . '/lib/img/eye_pupil.png'?>' />
+        <img class='eye-ray display-none' src='<?php //echo $dir . '/lib/img/eye_ray.png' ?>' />
+        <img class='eye-glow display-none' src='<?php echo $dir . '/lib/img/2_eye_drip.png'?>' />
+        <img class='eye-pupil display-none' src='<?php echo $dir . '/lib/img/2_eye_glow.png'?>' />
+        <img class='eye-base display-none' src='<?php echo $dir . '/lib/img/2_eye_base.png'?>' />
       </div>
     </div>
     <div class='nav__inner__third'>
