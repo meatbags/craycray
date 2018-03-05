@@ -48,4 +48,39 @@
   </div>
 </div>
 
+<div class='featured'>
+  <div class='featured__inner'>
+    <?php
+      $feat = new WP_Query(array('posts_per_page' => 4, 'post_type' => 'project', 'category_name' => 'Featured', 'post__not_in' => array(get_the_ID())));
+      $imgSize = 'medium';
+
+      if ($feat->have_posts()):
+        while ($feat->have_posts()):
+          global $post;
+          $feat->the_post();
+          $url = get_the_permalink();
+          $image = get_field('menu_image');
+          $sequence = get_field('image_sequence');
+          ?>
+      <div class='feat-item'>
+        <a href="<?php echo $url; ?>">
+          <div class='feat-item__inner'>
+            <div class='feat-mask'>
+              <?php echo get_the_title(); ?>
+            </div>
+            <?php if ($image != ''): ?>
+              <img src='<?php echo $image['sizes'][$imgSize]; ?>' />
+            <?php elseif ($sequence): ?>
+              <img src='<?php echo $sequence[0]['sizes'][$imgSize];?>' />
+            <?php endif; ?>
+          </div>
+        </a>
+      </div>
+    <?php endwhile;
+      endif;
+      wp_reset_query();
+    ?>
+  </div>
+</div>
+
 <?php get_footer(); ?>
