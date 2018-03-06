@@ -1,21 +1,23 @@
 .pages {
   width: 100%;
   min-height: 50vh;
+  border: 1px solid red;
 
   .page {
     @include pad-xy(2, 2);
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    border-right-style: double;
-    border-right-width: 4px;
+    justify-content: center;
 
     .page__inner {
-      width: 60%;
+      width: 75%;
       display: flex;
-      text-align: right;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
+      border-style: double;
+      border-width: 4px;
+      text-align: center;
+      padding: $space * 2;
 
       .page__inner__title {
         font-weight: bold;
@@ -27,6 +29,7 @@
           padding: 0;
           margin: 0;
           padding-bottom: $space * 4;
+          text-align: justify;
         }
       }
     }
