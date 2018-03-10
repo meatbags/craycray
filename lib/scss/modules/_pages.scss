@@ -1,7 +1,6 @@
 .pages {
   width: 100%;
   min-height: 50vh;
-  border: 1px solid red;
 
   .page {
     @include pad-xy(2, 2);
@@ -14,8 +13,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      border-style: double;
-      border-width: 4px;
       text-align: center;
       padding: $space * 2;
 

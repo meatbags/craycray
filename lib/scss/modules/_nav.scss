@@ -18,8 +18,9 @@
     height: 100%;
     display: flex;
     align-items: flex-end;
-    border-bottom-width: 4px;
-    border-bottom-style: double;
+    border-bottom: $border;
+    //border-bottom-width: 4px;
+    //border-bottom-style: double;
 
     @media screen and (max-width: $width) {
       width: 100%;
