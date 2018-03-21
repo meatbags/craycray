@@ -11,6 +11,10 @@
     position: relative;
     transition: $transition;
 
+    &.loading {
+      opacity: 0.25;
+    }
+
     img {
       width: 100%;
       height: auto;

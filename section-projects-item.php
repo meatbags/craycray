@@ -24,7 +24,7 @@
     }
   ?>'>
   <a href='<?php echo $permalink; ?>'>
-    <div class='item__inner <?php echo $type; ?>' data-id='#<?php echo $id; ?>' data-class='.<?php echo $seqClass; ?>'>
+    <div class='item__inner loading <?php echo $type; ?>' data-id='#<?php echo $id; ?>' data-class='.<?php echo $seqClass; ?>'>
       <?php if ($type == 'image_static'): ?>
         <img src='<?php echo $image1['sizes'][$imgSize]; ?>' />
       <?php elseif ($type == 'image_hover'): ?>
