@@ -29,12 +29,15 @@
         <img src='<?php echo $image1['sizes'][$imgSize]; ?>' />
       <?php elseif ($type == 'image_hover'): ?>
         <img class='hover' src='<?php echo $image1['sizes'][$imgSize]; ?>' />
-        <img class='hover' src='<?php echo $image2['sizes'][$imgSize]; ?>' />
+        <img class='hover defer-load' data-src='<?php echo $image2['sizes'][$imgSize]; ?>' />
       <?php elseif ($type == 'image_sequence'):
         $i = 0;
-        foreach ($sequence as $img): ?>
-        <img class='sequence <?php echo $seqClass; ?> <?php if ($i++ == 0){ echo 'active'; } ?>' src='<?php echo $img['sizes'][$imgSize]; ?>' />
-      <?php endforeach; endif; ?>
+        foreach ($sequence as $img):
+          if ($i++ == 0): ?>
+          <img class='sequence active <?php echo $seqClass; ?>' src='<?php echo $img['sizes'][$imgSize]; ?>' />
+        <?php else: ?>
+          <img class='sequence defer-load <?php echo $seqClass; ?>' data-src='<?php echo $img['sizes'][$imgSize]; ?>' />
+      <?php endif; endforeach; endif; ?>
     </div>
   </a>
 </div>
