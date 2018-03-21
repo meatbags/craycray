@@ -3,8 +3,6 @@
   display: flex;
   justify-content: center;
   border-top: $border;
-  //border-top-width: 4px;
-  //border-top-style: double;
   padding-top: $space * 4;
 
   .featured__inner {
@@ -34,6 +32,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          text-align: center;
           font-size: $fontMediumSmall;
           padding-bottom: $space;
 
@@ -44,7 +43,6 @@
 
         img {
           min-width: 100%;
-          object-fit: cover;
         }
       }
     }

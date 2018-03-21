@@ -24,7 +24,7 @@
       <div class='nav-logo'>
         <img class='eye-ray display-none' src='<?php //echo $dir . '/lib/img/eye_ray.png' ?>' />
         <img class='eye-glow display-none' src='<?php echo $dir . '/lib/img/2_eye_drip.png'?>' />
-        <img class='eye-pupil display-none' src='<?php echo $dir . '/lib/img/2_eye_glow.png'?>' />
+        <img class='eye-pupil display-none' src='<?php echo $dir . '/lib/img/2_eye_glow.png'?>' alt='logo-eye' />
         <img class='eye-base display-none' src='<?php echo $dir . '/lib/img/2_eye_base.png'?>' />
       </div>
     </div>

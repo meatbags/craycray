@@ -7,6 +7,7 @@
   $permalink = get_the_permalink();
   $cats = get_the_category();
   $id = 'project-' . get_the_ID();
+  $seqClass = 'sequence-' . get_the_ID();
   $imgSize = 'medium_large';
 ?>
 
@@ -23,7 +24,7 @@
     }
   ?>'>
   <a href='<?php echo $permalink; ?>'>
-    <div class='item__inner <?php echo $type; ?>' data-id='#<?php echo $id; ?>'>
+    <div class='item__inner <?php echo $type; ?>' data-id='#<?php echo $id; ?>' data-class='.<?php echo $seqClass; ?>'>
       <?php if ($type == 'image_static'): ?>
         <img src='<?php echo $image1['sizes'][$imgSize]; ?>' />
       <?php elseif ($type == 'image_hover'): ?>
@@ -32,7 +33,7 @@
       <?php elseif ($type == 'image_sequence'):
         $i = 0;
         foreach ($sequence as $img): ?>
-        <img class='sequence <?php if ($i++ == 0){ echo 'active'; } ?>' src='<?php echo $img['sizes'][$imgSize]; ?>' />
+        <img class='sequence <?php echo $seqClass; ?> <?php if ($i++ == 0){ echo 'active'; } ?>' src='<?php echo $img['sizes'][$imgSize]; ?>' />
       <?php endforeach; endif; ?>
     </div>
   </a>
