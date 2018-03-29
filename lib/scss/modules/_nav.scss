@@ -1,6 +1,5 @@
 .nav {
   @extend .noselect;
-
   position: absolute;
   z-index: $indexNav;
   top: 0;
@@ -13,14 +12,13 @@
   line-height: 1;
 
   .nav__inner {
-    @include pad-xy(0, 2);
+    @include pad-xy(0, 1);
     width: $width;
     height: 100%;
     display: flex;
     align-items: flex-end;
-    border-bottom: $border;
-    //border-bottom-width: 4px;
-    //border-bottom-style: double;
+    border-bottom: $dashed;
+    text-transform: uppercase;
 
     @media screen and (max-width: $width) {
       width: 100%;
@@ -85,7 +83,6 @@
 
       .nav-item {
         cursor: pointer;
-        text-decoration: underline;
 
         &:hover, &.active {
           .nav-item__inner {

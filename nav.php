@@ -54,7 +54,7 @@
       if (!in_array($cat->name, $excludeCats) && $cat->parent != 0):
         $parent = explode('/', get_category_parents($cat->term_id, false, '/', true))[0];
         ?>
-        <div class='drop-down-item display-none parent-<?php echo $parent; ?>' data-filter='.filter-<?php echo $cat->slug; ?>'>
+        <div class='drop-down-item display-none hash-<?php echo $cat->slug; ?> parent-<?php echo $parent; ?>' data-parent='.parent-<?php echo $parent; ?>' data-hash='<?php echo $cat->slug; ?>' data-filter='.filter-<?php echo $cat->slug; ?>'>
           <?php echo $cat->name; ?>
         </div>
     <?php endif;

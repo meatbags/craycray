@@ -17,8 +17,7 @@
         </div>
       <?php endif;
         if ($gallery):
-          foreach ($gallery as $img):
-      ?>
+          foreach ($gallery as $img): ?>
         <div class='image'>
           <img src='<?php echo $img['sizes']['large']; ?>' />
         </div>
@@ -58,6 +57,7 @@
         while ($feat->have_posts()):
           global $post;
           $feat->the_post();
+          $title = get_the_title();
           $url = get_the_permalink();
           $image = get_field('menu_image');
           $sequence = get_field('image_sequence');

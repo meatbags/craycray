@@ -11,7 +11,7 @@
   $imgSize = 'medium_large';
 ?>
 
-<div class='item <?php
+<div class='item fade-out <?php
     $featured = false;
     foreach($cats as $cat){
       if ($cat->name == 'Featured') {
@@ -38,6 +38,9 @@
         <?php else: ?>
           <img class='sequence defer-load <?php echo $seqClass; ?>' data-src='<?php echo $img['sizes'][$imgSize]; ?>' />
       <?php endif; endforeach; endif; ?>
+      <div class='item__inner__title'>
+        <?php echo $title; ?>
+      </div>
     </div>
   </a>
 </div>

@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  border-top: $border;
   padding-top: $space * 4;
 
   .featured__inner {
@@ -20,6 +19,9 @@
         height: 100%;
         overflow: hidden;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .feat-mask {
           position: absolute;
@@ -42,7 +44,7 @@
         }
 
         img {
-          min-width: 100%;
+          width: 100%;
         }
       }
     }
