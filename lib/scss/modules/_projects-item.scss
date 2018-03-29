@@ -11,8 +11,22 @@
     position: relative;
     transition: $transition;
 
+    .item__inner__title {
+      opacity: 0;
+      padding: $space / 2;
+      width: 100%;
+      text-align: right;
+      transition: $transition / 2;
+    }
+
     &.loading {
       opacity: 0.25;
+    }
+
+    &:hover {
+      .item__inner__title {
+        opacity: 1;
+      }
     }
 
     img {
