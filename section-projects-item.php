@@ -11,7 +11,7 @@
   $imgSize = 'medium_large';
 ?>
 
-<div class='item fade-out <?php
+<div class='item <?php
     $featured = false;
     foreach($cats as $cat){
       if ($cat->name == 'Featured') {
