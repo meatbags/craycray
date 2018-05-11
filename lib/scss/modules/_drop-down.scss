@@ -23,8 +23,9 @@
     }
 
     .drop-down-item {
-      padding-left: $space;
+      padding-left: $space * 1.5;
       cursor: pointer;
+      text-transform: lowercase;
 
       &:hover, &.active {
         font-weight: bold;

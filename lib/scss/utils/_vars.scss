@@ -5,17 +5,17 @@ $white: #fff;
 $colourPrimary: $black;
 $colourBackground: #fe571f;
 $colourBackgroundAlt: #fb5012;
-$orangeLight: #ffe6c3;
+$orangeLight: #ffeed8;
 $redLight: #ffe0c0;
 $orangeDark: darken($colourBackground, 10%);
-$colourBackgroundGradient: linear-gradient(to top, $colourBackground, $orangeLight);
-$colourBackgroundGradientAlt: linear-gradient(to top, $colourBackgroundAlt, $redLight);
+$colourBackgroundGradient: $orangeLight;
+$colourBackgroundGradientAlt: $orangeLight;
 $colourHover: lighten($orangeLight, 10%);
 
 // sizing
 
 $space: 10px;
-$width: 1200px;
+$width: 1080px;
 $heightNav: 200px;
 $heightFooter: 80px;
 
@@ -28,7 +28,7 @@ $mobile: 500px;
 
 $border: 1px solid black;
 $dashed: 2px dashed black;
-$double: 2px double black;
+$double: 1px double black;
 
 // index
 

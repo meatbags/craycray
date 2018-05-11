@@ -50,7 +50,7 @@
 <div class='featured'>
   <div class='featured__inner'>
     <?php
-      $feat = new WP_Query(array('posts_per_page' => 4, 'post_type' => 'project', 'category_name' => 'Featured', 'post__not_in' => array(get_the_ID())));
+      $feat = new WP_Query(array('posts_per_page' => 5, 'post_type' => 'project', 'category_name' => 'Featured', 'post__not_in' => array(get_the_ID())));
       $imgSize = 'medium';
 
       if ($feat->have_posts()):
