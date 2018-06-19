@@ -15,7 +15,7 @@
       <?php else: ?>
         <div class='nav-item'>
           <div class='nav-item__inner'>
-            <a target='_blank' href='https://www.instagram.com/bestieboy_director/'>Instagram</a>
+            <a target='_blank' href='https://www.instagram.com/bestieboyberlin/'>Instagram</a>
           </div>
         </div>
       <?php endif; ?>
