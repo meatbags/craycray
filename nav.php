@@ -10,7 +10,7 @@
     <div class='nav__inner__third'>
       <?php if (!is_home()): ?>
         <div class='nav-item'>
-          <div class='nav-item__inner home-button'><a href='<?php echo $home; ?>'>&larr; Home</a></div>
+          <div class='nav-item__inner home-button'><a href='<?php echo $home; ?>'>&larr; Back</a></div>
         </div>
       <?php else: ?>
         <div class='nav-item'>
