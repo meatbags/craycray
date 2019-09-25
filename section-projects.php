@@ -1,18 +1,19 @@
 <?php
-  include_once("section-projects-item.php");
-  $query = new WP_Query(array('posts_per_page' => -1, 'post_type' => 'project', 'orderby' => 'menu_order'));
+include_once('section-projects-item.php');
+$query = new WP_Query(array('posts_per_page' => -1, 'post_type' => 'project', 'orderby' => 'menu_order'));
+$posts = $query->posts;
 ?>
 
 <div class='projects'>
   <div class='projects__inner'>
     <div class='column'>
-      <?php getColumn($query->posts, 0); ?>
+      <?php getColumn($posts, 0); ?>
     </div>
     <div class='column'>
-      <?php getColumn($query->posts, 1); ?>
+      <?php getColumn($posts, 1); ?>
     </div>
     <div class='column'>
-      <?php getColumn($query->posts, 2); ?>
+      <?php getColumn($posts, 2); ?>
     </div>
   </div>
 </div>

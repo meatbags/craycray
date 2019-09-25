@@ -1,19 +1,19 @@
 <?php
 function getColumn($projects, $n) {
-  $i = 0;
-  foreach ($projects as $project) {
-    if ($i++ % 3 == $n) {
-      global $post;
-      $post = $project;
-      $title = get_the_title();
-      $type = get_field('menu_type');
-      $image1 = get_field('menu_image');
-      $image2 = get_field('hover_image');
-      $sequence = get_field('image_sequence');
-      $permalink = get_the_permalink();
-      $cats = get_the_category();
-      $id = 'project-' . get_the_ID();
-      $seqClass = 'sequence-' . get_the_ID();
+  $len = count($projects);
+  for ($i=0; $i<$len; $i++) :
+    $project = $projects[$i];
+    if ($i % 3 === $n) :
+      $pid = $project->ID;
+      $title = $project->post_title;
+      $type = get_field('menu_type', $pid);
+      $image1 = get_field('menu_image', $pid);
+      $image2 = get_field('hover_image', $pid);
+      $sequence = get_field('image_sequence', $pid);
+      $permalink = get_the_permalink($pid);
+      $cats = get_the_category($pid);
+      $id = 'project-' . $pid;
+      $seqClass = 'sequence-' . $pid;
       $imgSize = 'medium_large';
       ?>
       <div data-menu-index='<?php echo $i; ?>' class='item <?php
@@ -50,7 +50,6 @@ function getColumn($projects, $n) {
         </a>
       </div>
 <?php
-    }
-  }
+    endif;
+  endfor;
 }
-?>
