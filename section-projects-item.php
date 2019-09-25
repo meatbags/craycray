@@ -9,6 +9,7 @@
   $id = 'project-' . get_the_ID();
   $seqClass = 'sequence-' . get_the_ID();
   $imgSize = 'medium_large';
+  $menu_order = $post->menu_order;
 ?>
 
 <div class='item <?php
@@ -22,7 +23,7 @@
     if (!$featured) {
       echo ' display-none';
     }
-  ?>'>
+  ?>' data-menu-item='<?php echo $menu_order; ?>'>
   <a href='<?php echo $permalink; ?>'>
     <div class='item__inner loading <?php echo $type; ?>' data-id='#<?php echo $id; ?>' data-class='.<?php echo $seqClass; ?>'>
       <?php if ($type == 'image_static'): ?>
