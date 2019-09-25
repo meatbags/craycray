@@ -1,15 +1,6 @@
 <?php
+  include_once("section-projects-item.php");
   $query = new WP_Query(array('posts_per_page' => -1, 'post_type' => 'project', 'orderby' => 'menu_order'));
-  function getColumn($projects, $n) {
-    $i = 0;
-    foreach ($projects as $project) {
-      if ($i++ % 3 == $n) {
-        global $post;
-        $post = $project;
-        get_template_part('section-projects-item');
-      }
-    }
-  }
 ?>
 
 <div class='projects'>
