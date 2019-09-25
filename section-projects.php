@@ -1,10 +1,10 @@
 <?php
   $query = new WP_Query(array('posts_per_page' => -1, 'post_type' => 'project', 'orderby' => 'menu_order'));
   function getColumn($projects, $n) {
-    $len = count($projects);
-    for ($i=0; $i<$len; $i+=1) {
-      if ($i % 3 == $n) {
-        $project = $projects[$i];
+    //$len = count($projects);
+    $i = 0;
+    for ($projects as $project) {
+      if ($i++ % 3 == $n) {
         global $post;
         $post = $project;
         $title = get_the_title();
